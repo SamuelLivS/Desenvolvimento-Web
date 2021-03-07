@@ -1,6 +1,6 @@
 function teste1(num){
     if(num > 7)
-        console.log(num)
+        console.log(num) // se for uma única sentença pode-se usar ou não as chaves.
 
     console.log('Final')
 }
