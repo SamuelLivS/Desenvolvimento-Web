@@ -1,7 +1,7 @@
 const pessoa = {
     saudacao: 'Bom dia!',
     falar(){
-        console.log(this.saudacao)// Pra esse contexto preciso do this
+        console.log(this.saudacao)// Pra esse contexto de função preciso do this pois saudacao não existe nesse escopo.
     }
 }
 
