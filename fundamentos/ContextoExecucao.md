@@ -25,10 +25,15 @@ No contexto global o this referencia todo o escopo global, mas se ele for chamad
 Ele varia conforme o contexto chamado.
 ---------------------------------------------------------
 ## Node - Global
-Global no node equivale ao window do browse.
+Global no módulo atual do node equivale ao window do browse.
+ * O NODE TRABALHA COM MÓDULOS!!!!! LOGO O GLOBAL DO NODE É O MODULE.EXPORTS(VÍSIVEL FORA DO MÓDULO ATUAL, PARA TODOS OS OUTROS MÓDULOS), ENQUANTO O OBJ GLOBAL É SOMENTE O CONTEXTO LÉXICO DO MÓDULO ATUAL.
 
 ### This no Node
 this === module.exports
+module.exports === obj global do node
 
-dentro do node todo arquivo é um módulo diferente. //Vai entender melhor
+* dentro do node todo arquivo é um módulo diferente. //Vai entender melhor
+* global é vísivel em todo o módulo atual.
+* module.exports é vísivel fora desse módulo.
+
 CUIDADO em declarar variaveis sem o var, let ou const. Vai dá ruim.
