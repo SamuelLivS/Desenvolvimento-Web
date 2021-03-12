@@ -21,7 +21,7 @@ const carro = {
             numero: 123
         }
     },
-    condutores: [{// pode ter Arrays
+    condutores: [{// pode ter Arrays. Pode ter objetos dentro do Array
         nome: 'Junior',
         idade: 19
     }, {
@@ -43,4 +43,4 @@ delete carro.calcularValorSeguro
 console.log(carro)
 console.log(carro.condutores)//carro existe, embora não tenha condutores, não quer dizer que não exista mas sim que não está definido.
 console.log(carro.condutores.length)
-//Tome cuidado ao acessar atributos que não estão definidos, pois terá problemas.
+//Tome cuidado ao acessar métodos e atributos de outros atributos que não estão definidos, pois terá problemas.
