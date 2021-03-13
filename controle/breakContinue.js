@@ -24,7 +24,7 @@ for (let y in nums){
 }
 
 //NINGUÉM USA - ENTÃO NÃO USE PLEASE!!!
-externo: for (a in nums){
+externo: for (a in nums){ //isso é o rótulo
     for (b in nums){
         if(a == 2 && b == 3) break externo
         console.log(`Par = ${a}, ${b}`)
