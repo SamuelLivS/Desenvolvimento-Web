@@ -1,4 +1,5 @@
 /**Reduce
+ * Ele tem a ideia de agregar os valores em um só.
  * Recebe uma callback e um valor inicial(opcional).
  * Ele acumula o resultado da chamado anterior e passa como um parâmetro na próxima chamada.
  * Se quiser um valor inicial, é só passa-lo depois da callback, senão ele irá usar o valor do índice 0 como valor inicial.
