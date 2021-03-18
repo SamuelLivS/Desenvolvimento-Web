@@ -17,4 +17,4 @@ console.log(prod2)
 
  * JSON é um formato textual, é uma forma de comunicação entre sistemas.
  * Troca de dados entre sistemas.
- */
+*/

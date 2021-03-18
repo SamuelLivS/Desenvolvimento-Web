@@ -1,5 +1,5 @@
 // par nome/valor
-const saudacao = 'Opa' // contexto léxico(local físico que a var foi definida) 1
+const saudacao = 'Opa' // contexto léxico(local físico que a var foi definida)
 
 function exec(){// conjunto de chave/valor com a mesma chave mas em contextos diferentes não causam erros.
     const saudacao = 'Falaa' // contexto léxico 2 

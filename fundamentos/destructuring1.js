@@ -3,7 +3,6 @@
  * Serve para desestruturar um objeto ou Array.
  * No contexto de objeto usa-se o {}
  * No contexto de Array usa-se o []
- * 
 */
 
 const pessoa = {
@@ -27,7 +26,7 @@ console.log(n, i)
 const { sobrenome, bemHumarada=true} = pessoa
 console.log(sobrenome, bemHumarada)
 
-// acessar atributos de objetos dentro de outros obejtos
+// acessar atributos de objetos dentro de outros objetos
 const { endereco: { logradouro, numero, cep } } = pessoa
 console.log(logradouro, numero, cep)
 

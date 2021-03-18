@@ -1,7 +1,7 @@
 /*
  * função é um bloco de código nomeado, pra vc chama-la quantas vezes quiser.
     Pode ou não receber parâmetros e retornar dados
-    Dê bons nomes,
+    Dê bons nomes.
  */
 
  //Funcao sem retorno

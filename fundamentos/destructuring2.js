@@ -1,5 +1,5 @@
-// É mas pra você saber.
-//destructuring em Array.
+// É mais pra você saber.
+// destructuring em Array.
 // operador destructuring sempre fica na esquerda da declaração
 const [a] = [10]
 console.log(a)

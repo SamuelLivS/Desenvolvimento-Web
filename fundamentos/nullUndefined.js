@@ -17,7 +17,7 @@
     por valor, onde cada variável tem seu valor independente, ou seja
     agora sim o valor é armazenado e não o seu endereço.
     Ex: let c = 3
-    let d = c - aqui foi passado o valo de c, não a referência
+    let d = c - aqui foi passado o valor de c, não a referência
     se vc mudar qualquer uma das variáveis vai perceber que a outra não sofre a mesma alteração.
 ------------------------------------------------------------------------------------
     Se você quiser zerar uma variável, utilize o null, mas cuidado, pois não será possivel acessar qualquer atributo ou

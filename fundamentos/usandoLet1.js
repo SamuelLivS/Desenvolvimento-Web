@@ -2,7 +2,8 @@
  * LET
     let respeita o escopo ao qual foi declarada
     tem escopo global, função e de bloco
- */
+*/
+
 var numero = 1
 {
     let numero = 2

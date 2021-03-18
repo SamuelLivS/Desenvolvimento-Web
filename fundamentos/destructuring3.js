@@ -7,4 +7,4 @@ const obj = { max: 50, min: 40}
 console.log(rand(obj)) //passando objeto
 console.log(rand({min:955})) //passando só um valor
 console.log(rand({})) //passando objeto vazio
-//console.log(rand()) // passando nada, dá erro, pois a função vai tentar desestruturar um atributo que não existe
+//console.log(rand()) // passando nada, dá erro, pois a função vai tentar desestruturar um objeto que não existe

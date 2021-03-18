@@ -1,5 +1,7 @@
 function rand([min = 0, max = 1000]){ // aqui está destructuring os atributos do array e passando como dois novos atributos para a função
-    if(min > max) [min, max] = [max, min]//
+    if(min > max) { 
+        [min, max] = [max, min]
+    }
     const valor = Math.random() * (max - min) + min
     return Math.floor(valor)
 }
