@@ -6,4 +6,7 @@ const produto = {
     desconto: 0.15
 }
 
-fs.writeFile(__dirname, )
+//Transformando um objeto em um JSON e salvando ele em um novo arquivo no diretório atual. 
+fs.writeFile(__dirname + '/arquivoGerado.json', JSON.stringify(produto), err => {
+    console.log(err || 'Arquivo salvo!')
+})

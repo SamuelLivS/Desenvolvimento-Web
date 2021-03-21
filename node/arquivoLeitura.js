@@ -1,9 +1,10 @@
-//Reassistir essa aula!!!!!!!
 const fs = require('fs') //Módulo previamente inistalado no node.
+
+//__dirname representa o diretório atual.
 
 const caminho = __dirname + '/arquivo.json'
 
-// sincrono...
+// sincrono... Não é recomendável
 const conteudo = fs.readFileSync(caminho, 'utf-8')
 console.log(conteudo)
 
@@ -13,8 +14,7 @@ fs.readFile(caminho, 'utf-8', (err, conteudo) => {
     console.log(`${config.db.host}:${config.db.porta}`)
 })
 
-
-const config = require('./arquivo.json')//traz o arquivo json convertido para objeto.
+const config = require('./arquivo.json')//traz o arquivo json já convertido para objeto. - O require automaticamente converte os JSON para objeto
 console.log(config.db)
 
 fs.readdir(__dirname, (err, arquivos) =>{
