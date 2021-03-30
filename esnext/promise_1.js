@@ -5,6 +5,7 @@
 // Se precisar de mais do que um valor use objetos ou arrays.
 // para acessa-la vc deve chama-la, e usar o método then ou o catch.
 // then recebe uma função como parâmetro, e se a promessa for cumprida essa função será executada.
+// caso a promessa dê algum erro o catch será usado para tratar esse erro.
 
 const primeiroElemento = array => array[0]
 
