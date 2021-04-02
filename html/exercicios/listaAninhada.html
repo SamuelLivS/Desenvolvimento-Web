@@ -1,19 +1,19 @@
 <h1>Projeto</h1>
 <ul class="tree">
     <li>
-        backend
-        <ul>
+        <a href="#" onclick="Mudarestado('backend')">backend</a>
+        <ul id="backend">
             <li>
-                app
-                <ul>
+                <a href="#" onclick="Mudarestado('app')">app</a>
+                <ul id="app">
                     <li>produto.js</li>
                     <li>usuario.js</li>
                     <li>venda.js</li>
                 </ul>
             </li>
             <li>
-                config
-                <ul>
+                <a href="#" onclick="Mudarestado('config')">config</a>
+                <ul id="config">
                     <li>banco.js</li>
                     <li>rotas.js</li>
                     <li>servidor.js</li>
@@ -22,11 +22,11 @@
         </ul>
     </li>
     <li>
-        frontend
-        <ul>
+        <a href="#" onclick="Mudarestado('frontend')">frontend</a>
+        <ul id="frontend">
             <li>
-                public
-                <ul>
+                <a href="#" onclick="Mudarestado('public')">public</a>
+                <ul id="public">
                     <li>app.css</li>
                     <li>app.js</li>
                     <li>index.html</li>
@@ -38,5 +38,21 @@
 
 <link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
 <script>
+function Mudarestado(el) {
+        let display = document.getElementById(el).style.display;
+        if(display == "none")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
 
+    // Resolução do Professor
+    // Envolver os elementos que servirão de "início" da arvore, com <nav> e adicionar uma propriedade personalizada "wm-folder"...
+    // document.querySelectorAll('[wm-folder]').forEach(folder => {
+    //     folder.onclick = function(e) {
+    //         const ul = folder.nextElementSibling//pega o próximo elemento html.
+    //         const d = ul.style.display//acessa a visibilidade de uma tag especificada
+    //         ul.style.display = d === 'none' ? 'block' : 'none'
+    //      }
+    // })
 </script>
