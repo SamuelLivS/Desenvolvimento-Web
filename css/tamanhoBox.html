@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tamanho Box</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* 
+                border box - padding, margin, content e border serão considerados como tamanho total da caixa.
+                
+                content box - apenas o content será considerado como o tamanho da caixa, os outros irão "transbordar" 
+            */
+        }
+
+        body {
+            font-size: 45px;
+            margin: 0;
+        }
+
+        div {
+            background-color: deepskyblue;
+            width: 100%;
+            height: 300px;
+            padding: 100px;
+            border: solid 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        O tamanho do Box é...
+    </div>
+</body>
+</html>
