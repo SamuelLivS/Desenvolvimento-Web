@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Unidades #02</title>
     <style>
+        /* Dependendo da posição e do tamanho de um elemento, efeitos colaterais podem acontecer. */
         .fora {
-            position: relative;
+            position: absolute;
             background-color: orange;
             height: 400px;
             width: 400px;
@@ -16,10 +17,10 @@
             background-color: mediumvioletred;
             height: 100px;
             width: 100%;
-            position: static; /* conteudo */
+            position: static; /* PADRÃO - conteudo */
             position: relative; /* conteudo */
             position: absolute; /* conteudo + padding */
-            position: fixed;/* viewport */
+            position: fixed;/* baseado no viewport, e não na div fora. */
         }
     </style>
 </head>

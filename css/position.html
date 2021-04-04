@@ -5,7 +5,65 @@
     <meta charset="UTF-8">
     <title>Position</title>
     <style>
-        /* ... */
+        div {
+            font-size: 60px;
+            padding: 30px;
+            border: solid 5px #222;
+            color: #fff;
+        }
+
+        .static {
+            top: 100px; /* não considera */
+            left: 100px; /* não considera */
+            background-color: steelblue;
+        }
+
+        .fixed {
+            position: fixed; /* leva em consideração o posicionamento da página e se fixa lá */
+            bottom: 30px;
+            right: 0px;
+            background-color: tomato;
+        }
+
+        .relative1 {
+            position: relative; /* leva em consideração o elemento anterior*/
+            left: 50px;
+            top: 5px;
+            background-color: seagreen;
+        }
+
+        .absolute1 {
+            position: absolute; /* ele se posiciona de forma absoluta em referência de onde está, seja na página, ou num outro elemento. */
+            left: 350px;
+            top: 120px;
+            background-color: violet;
+        }
+
+        .relative2 {
+            position: relative;
+            left: 250px;
+            top: 2000px;
+            width: 200px;
+            height: 200px;
+            background-color: slategrey;
+        }
+
+        .absolute2 {/* se relaciona de forma absoluta dentro do pai relativo e não fora. */
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            background-color: orange;
+        }
+
+        .sticky { /* quando vc rola a página o sticky faz com que o elemento fique fixo na página */
+            position: sticky;
+            background-color: #777;
+            top: 0px;
+
+        }
+
     </style>
 </head>
 
