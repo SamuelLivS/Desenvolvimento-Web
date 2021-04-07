@@ -6,7 +6,55 @@
     <title>Flexbox #02</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        div {
+            border: solid 5px dodgerblue;
+            font-size: 40px;
+        }
+
+        .flex-container div {
+            box-sizing: border-box;
+        }
+
+        .flex-container {
+            display: flex;
+            height: 300px;
+            width: 600px;
+        }
+
+        .flex-container div:nth-child(3) {
+            background-color: indianred;
+            /* Alterar ordem de exibição, quanto maior a ordem(peso) do elemento, mais ele será "jogado" para o final */
+            order: 1;
+            order: 0;/* Padrão */
+            order: -1;
+            /* Alinhar o elemento dentro da div */
+            align-self: center;
+            align-self: flex-end;
+            align-self: flex-start;
+            align-self: stretch;/* Padrão */
+        }
+
+        .flex-container div {
+            width: 100px;
+            /* Dividir o espaço vazio e atribuir para todos os elementos */
+            flex-grow: 0;
+            flex-grow: 1;/* O peso mostra quanto espaço cada elemento vai ocupar. */
+        }
+
+        .flex-container div:nth-child(1){
+            flex-grow: 2;/* É possivel atribuir maior peso pra um elemento específico ser mais afetado do que os outros*/
+        }
+
+        .flex-container {
+            width: 300px;
+            /* Definir peso da divisão para diminuir o espaço dos elementos, caso a flex-box seja "pequena" */
+            flex-shrink: 1;
+        }
+
+        .flex-container div:nth-child(1) {
+            /* Definir peso para critério de divisão em um elemento específico. */
+            flex-shrink: 5;
+        }
     </style>
 </head>
 
